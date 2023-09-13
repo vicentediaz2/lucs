@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Titulo -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MENU"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25sp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Perfil-->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:layout_marginBottom="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:padding="10dp"
+                    android:src="@drawable/perfil"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="imagen1"
+                    />
+
+                <Button
+                    android:onClick="onClickPerfil"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="PERFIL"
+                    android:contentDescription="boton1"
+                    android:textSize="25sp"
+                    android:backgroundTint="@color/white"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!-- Configuracion de luces -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:layout_marginBottom="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ampolletablanca"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="imagen1"
+                    />
+
+                <Button
+                    android:onClick="onClickConfiguracion"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="Configurar Luces"
+                    android:contentDescription="boton1"
+                    android:textSize="25sp"
+                    android:backgroundTint="@color/white"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!-- SALIDA -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:layout_marginBottom="25dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:padding="10dp"
+                    android:src="@drawable/salida"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="imagen1"
+                    />
+
+                <Button
+                    android:onClick="onClickSalida"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="SALIR"
+                    android:contentDescription="boton1"
+                    android:textSize="25sp"
+                    android:backgroundTint="@color/white"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VALORANOS"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="rating"/>
+
+    </LinearLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
