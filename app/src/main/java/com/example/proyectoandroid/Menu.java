@@ -1,8 +1,10 @@
 package com.example.proyectoandroid;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 // Menu
 public class Menu extends AppCompatActivity {
@@ -27,6 +29,12 @@ public class Menu extends AppCompatActivity {
         Intent intent = new Intent(this, Configuracion.class);
         startActivity(intent);
 
+    }
+
+    public void onClickAbout(View view)
+    {
+        Intent intent = new Intent(this, About.class);
+        startActivity(intent);
     }
 
     //Boton Salida

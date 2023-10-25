@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace 'com.example.proyectoandroid'
-    compileSdk 33
+    compileSdk 31
 
     defaultConfig {
         applicationId "com.example.proyectoandroid"
@@ -26,13 +26,18 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    buildToolsVersion '30.0.3'
 }
 
 dependencies {
 
+    implementation 'org.osmdroid:osmdroid-android:6.1.8'
+    implementation 'org.osmdroid:osmdroid-wms:6.1.11'
+
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:2.0.4'
     implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.google.android.gms:play-services-maps:18.2.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
